@@ -25,14 +25,18 @@ class SplashActivity : AppCompatActivity() {
 
         Handler().postDelayed({
             openMainActivity()
+
         },2000)
     }
 
-   private fun setBuildVersion() {
-       tvVersion?.text = getString(R.string.version, BuildConfig.VERSION_NAME)
-   }
 
-    private fun setBuildCode(){
+
+    private fun setBuildVersion() {
+        tvVersion?.text = getString(R.string.version, BuildConfig.VERSION_NAME)
+    }
+
+    private fun setBuildCode() {
+
         codeVersion?.text = getString(R.string.versionName, BuildConfig.VERSION_CODE)
     }
 

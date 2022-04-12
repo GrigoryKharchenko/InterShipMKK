@@ -7,6 +7,7 @@
     tools:context=".SplashActivity"
     android:background="@drawable/gradient_color">
 
+
     <TextView
         android:id="@+id/txTitle"
         android:layout_width="wrap_content"
@@ -19,6 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+
 
     <ImageView
         android:id="@+id/imgLogo"
@@ -34,6 +36,7 @@
         android:id="@+id/verCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         app:layout_constraintBottom_toTopOf="@+id/txVersion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="12dp"
-        tools:text="assssss"/>
+        tools:text="text" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
