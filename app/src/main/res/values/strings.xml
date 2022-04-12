@@ -23,4 +23,8 @@
     <string name="e_mail">Введите e-mail</string>
     <string name="condition_password">Пароль должен содержать ццифры, прписные и \nстрочные буквы состять не менее из 8 символв.</string>
     <string name="password">Пароль</string>
+    <string name="btn_registration">Зарегистрирооваться</string>
+    <string name="congratulations">Поздравляем</string>
+    <string name="message_dialog">Вы зарегистрироовались в Личноом кабинете. На указанный e-mail отправлено письмо с инструментами.Можете начинать работать.</string>
+    <string name="next">Далее</string>
 </resources>

@@ -25,11 +25,8 @@ class SplashActivity : AppCompatActivity() {
 
         Handler().postDelayed({
             openMainActivity()
-
         },2000)
     }
-
-
 
     private fun setBuildVersion() {
         tvVersion?.text = getString(R.string.version, BuildConfig.VERSION_NAME)
