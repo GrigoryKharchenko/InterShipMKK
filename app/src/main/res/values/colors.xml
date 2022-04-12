@@ -10,4 +10,6 @@
     <color name="blue_lagoon">#00686B</color>
     <color name="midnight_blue">#04D1DA</color>
     <color name="teal_Dark">#015559</color>
+    <color name="teal_basic">#018A90</color>
+    <color name="gray2">#666666</color>
 </resources>
