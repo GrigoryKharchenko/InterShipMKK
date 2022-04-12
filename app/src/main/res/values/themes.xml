@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.MKK" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/teal_basic</item>
+        <item name="colorPrimaryVariant">@color/teal_basic</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -21,4 +21,5 @@
     <style name="Button.Blue" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@color/teal_basic</item>
     </style>
+    
 </resources>

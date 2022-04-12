@@ -25,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
 
         Handler().postDelayed({
             openMainActivity()
-        },2000)
+        }, 2000)
     }
 
     private fun setBuildVersion() {
@@ -41,4 +41,5 @@ class SplashActivity : AppCompatActivity() {
         val intent = Intent(this, RegistrationActivity::class.java)
         startActivity(intent)
     }
+
 }
