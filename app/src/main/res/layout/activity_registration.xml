@@ -7,7 +7,7 @@
     tools:context=".RegistrationActivity">
 
     <ScrollView
-        android:id="@+id/ScrView"
+        android:id="@+id/scrView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
@@ -51,7 +51,6 @@
                     android:layout_height="wrap_content"
                     android:inputType="textCapSentences"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -70,7 +69,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -89,7 +87,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -126,7 +123,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -145,7 +141,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -165,7 +160,6 @@
                     android:hint="+996 XXX XXXXXX"
                     android:inputType="phone"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -211,7 +205,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -230,7 +223,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -247,7 +239,6 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -262,46 +253,44 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="1"
                     android:gravity="end"
-                    android:layout_marginEnd="12dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_marginBottom="20dp"
-                    tools:text="Samsung S21"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    />
+                    tools:text="Samsung S21" />
 
             </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginBottom="20dp"
-                android:text="@string/fiks_registrator"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/fiks_registrator"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginBottom="20dp"
-                tools:text="X15629KG"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:layout_weight="1"
-                android:gravity="end"
-                android:layout_marginEnd="12dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:text="X15629KG" />
 
-        </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -320,7 +309,6 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

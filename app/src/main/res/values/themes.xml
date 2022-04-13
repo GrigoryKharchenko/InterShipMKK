@@ -21,5 +21,5 @@
     <style name="Button.Blue" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@color/teal_basic</item>
     </style>
-    
+
 </resources>

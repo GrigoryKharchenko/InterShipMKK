@@ -28,4 +28,7 @@
     <string name="message_dialog">Вы зарегистрироовались в Личноом кабинете. На указанный e-mail отправлено письмо с инструментами.Можете начинать работать.</string>
     <string name="next">Далее</string>
     <string name="device">Samsung S21</string>
+    <string name="shift_cashier">Кассир смены</string>
+    <string name="name_cashier">Имя, фамилия кассира</string>
+    <string name="cancel">Отмена</string>
 </resources>
