@@ -43,17 +43,42 @@
         app:layout_constraintTop_toBottomOf="@+id/imgBtOpenShift" />
 
     <ImageButton
+        android:id="@+id/imgBtReportX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:padding="0dp"
+        android:src="@drawable/ic_x_report"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtOpenShift"
+        app:layout_constraintStart_toStartOf="@+id/imgBtOpenShift"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtCheckList"
+        android:visibility="gone"/>
+
+    <ImageButton
         android:id="@+id/imgBtSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
         android:padding="0dp"
         android:src="@drawable/ic_settings"
-        app:layout_constraintEnd_toEndOf="@id/imgBtOpenShift"
-        app:layout_constraintStart_toStartOf="@id/imgBtOpenShift"
-        app:layout_constraintTop_toBottomOf="@id/imgBtCheckList" />
+        app:layout_constraintEnd_toEndOf="@+id/imgBtReportX"
+        app:layout_constraintStart_toStartOf="@+id/imgBtReportX"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtReportX" />
 
-    <com.google.android.material.button.MaterialButton
+    <Button
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.BackTint.14.Corner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnCashBoxOff"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="16sp"
+        android:layout_marginBottom="24dp"
+        android:text="Закрытие смены"
+        android:visibility="gone"/>
+
+    <Button
         android:id="@+id/btnCashBoxOff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -64,6 +89,7 @@
         android:textAllCaps="false"
         android:textColor="@color/red"
         app:cornerRadius="8dp"
+        android:padding="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

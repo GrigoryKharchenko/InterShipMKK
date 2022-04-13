@@ -11,10 +11,10 @@
         android:theme="@style/Theme.MKK">
         <activity
             android:name=".MenuActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".RegistrationInPersonalArea"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -30,5 +30,4 @@
             android:exported="true">
         </activity>
     </application>
-
 </manifest>

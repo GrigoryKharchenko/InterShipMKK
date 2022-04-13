@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class SplashActivity : AppCompatActivity() {
 
     private var tvVersion: TextView? = null
-    private var txCodeVersion: TextView? = null
+    private var tvCodeVersion: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.Theme_MKK)
@@ -17,9 +17,10 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash_acivity)
 
         tvVersion = findViewById(R.id.txVersion)
-        txCodeVersion = findViewById(R.id.txVerCode)
+        tvCodeVersion = findViewById(R.id.txVerCode)
 
         setBuildVersion()
+
         setBuildCode()
 
         Handler().postDelayed({
@@ -33,11 +34,12 @@ class SplashActivity : AppCompatActivity() {
 
     private fun setBuildCode() {
 
-        txCodeVersion?.text = getString(R.string.versionName, BuildConfig.VERSION_CODE)
+        tvCodeVersion?.text = getString(R.string.versionName, BuildConfig.VERSION_CODE)
     }
 
     private fun openMainActivity() {
         val intent = Intent(this, RegistrationActivity::class.java)
         startActivity(intent)
     }
+
 }
