@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">MKK</string>
+    <string name="title">Мобильые Кассы \n Кыргызстана</string>
+    <string name="version">Version %1$s</string>
+    <string name="versionName">Code %1$d</string>
+    <string name="registration">Регистрации кассы</string>
+    <string name="name_subject">Наименовние субъекта</string>
+    <string name="inn">ИНН субъекта</string>
+    <string name="address">Юридический адрес субъекта</string>
+    <string name="dislocation_tax">УГНС по Аламудунской району</string>
+    <string name="tax_mode">Специальный налооговый режим</string>
+    <string name="kind_of_activity">Вид деятельности субъекта</string>
+    <string name="where_use">ГДЕ БУДЕТ ИСПОЛЬЗОВАТЬСЯ МОБИЛЬНАЯ КАССА:</string>
+    <string name="send_application">Отправить заявку на регистраццию</string>
+    <string name="name_object">Наименование объекта</string>
+    <string name="trade_pavilion">Торговый павильон</string>
+    <string name="address_object">Адрес места располжения объекта</string>
+    <string name="information_cash">ИНФООРМАЦИЯ О КАССЕ:</string>
+    <string name="model_KKM">Модель ККМ</string>
+    <string name="fiks_registrator">Фискальный регистратр №</string>
+    <string name="reg_in_personal_area">Регистрация \nв Личном кабинете</string>
+    <string name="text_preview">Регистрация в личном кабинете неообходима для электронной отчетности операций по кассе в \nналогоовоой службе.</string>
+    <string name="e_mail">Введите e-mail</string>
+    <string name="condition_password">Пароль должен содержать ццифры, прписные и \nстрочные буквы состять не менее из 8 символв.</string>
+    <string name="password">Пароль</string>
+    <string name="btn_registration">Зарегистрирооваться</string>
+    <string name="congratulations">Поздравляем!</string>
+    <string name="message_dialog">Вы зарегистрироовались в Личноом кабинете. На указанный e-mail отправлено письмо с инструментами.Можете начинать работать.</string>
+    <string name="next">Далее</string>
+    <string name="device">Samsung S21</string>
 </resources>
