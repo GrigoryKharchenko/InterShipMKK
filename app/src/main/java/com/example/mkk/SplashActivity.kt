@@ -3,6 +3,7 @@ package com.example.mkk
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -20,13 +21,19 @@ class SplashActivity : AppCompatActivity() {
         tvCodeVersion = findViewById(R.id.txVerCode)
 
         setBuildVersion()
-
         setBuildCode()
+        openMainActivity()
 
-        Handler().postDelayed({
-            openMainActivity()
-        }, 2000)
+//example
+var infoCar = Lancer()
+        infoCar.setColor("Very red")
+        infoCar.setEngine(2.0)
+        infoCar.setWheel(5)
+        Log.d("dasdASsA","${infoCar.carInfoColor()}")
+        Log.d("dasdASsA","${infoCar.carInfoEng()}")
+        Log.d("dasdASsA","${infoCar.carInfoWheels()}")
     }
+
 
     private fun setBuildVersion() {
         tvVersion?.text = getString(R.string.version, BuildConfig.VERSION_NAME)
@@ -39,7 +46,9 @@ class SplashActivity : AppCompatActivity() {
 
     private fun openMainActivity() {
         val intent = Intent(this, RegistrationActivity::class.java)
-        startActivity(intent)
-        finish()
+        Handler().postDelayed({
+            startActivity(intent)
+            finish()
+        }, 2000)
     }
 }

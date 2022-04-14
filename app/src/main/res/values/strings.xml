@@ -31,4 +31,14 @@
     <string name="shift_cashier">Кассир смены</string>
     <string name="name_cashier">Имя, фамилия кассира</string>
     <string name="cancel">Отмена</string>
+
+    <!--    Activity menu-->
+    <string name="activity_menu_open_shift">Открыть смену</string>
+    <string name="activity_menu_list_checks">Список чеков</string>
+    <string name="activity_menu_list_report">Список отчетов</string>
+    <string name="activity_menu_settings">Настройки</string>
+    <string name="activity_menu_x_report">Сформировать Х-отчет</string>
+    <string name="activity_menu_closed_shift">Закрытие смены</string>
+    <string name="activity_menu_off_cash_box">Выключить кассу</string>
+    <!--    Activity menu-->
 </resources>

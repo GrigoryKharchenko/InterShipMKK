@@ -19,7 +19,7 @@
     </style>
     
     <style name="TealDark">
-        <item name="android:textColor">@color/teal_Dark</item>
+        <item name="android:textColor">@color/teal_dark</item>
     </style>
 
     <style name="TealDark.30">
@@ -55,6 +55,10 @@
 
     <style name="Button.Blue" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@color/teal_basic</item>
+    </style>
+
+    <style name="TextWhite">
+        <item name="android:textColor">@color/white</item>
     </style>
 
 </resources>

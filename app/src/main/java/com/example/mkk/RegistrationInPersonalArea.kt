@@ -1,6 +1,7 @@
 package com.example.mkk
 
 import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -28,8 +29,14 @@ class RegistrationInPersonalArea : AppCompatActivity() {
             .setTitle(getString(R.string.congratulations))
             .setMessage(resources.getString(R.string.message_dialog))
             .setPositiveButton(R.string.next) { dialog: DialogInterface, _: Int ->
+                dialogClickListener()
                 dialog.dismiss()
             }
             .show()
+    }
+
+    private fun dialogClickListener(){
+        val intent = Intent(this, MenuActivity::class.java)
+        startActivity(intent)
     }
 }

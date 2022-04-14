@@ -4,18 +4,24 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1855" />
+        <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/corner_constrain_layout.xml" value="0.211" />
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/gradient_color.xml" value="0.1855" />
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/ic_check_list.xml" value="0.1855" />
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1855" />
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/ic_list_of_reports.xml" value="0.1855" />
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/ic_logo.xml" value="0.1855" />
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/ic_open_shift.xml" value="0.1855" />
+        <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/ic_printer.xml" value="0.211" />
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/ic_settings.xml" value="0.1855" />
+        <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/ic_stat.xml" value="0.211" />
+        <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/ic_vector.xml" value="0.211" />
+        <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/ic_x_report.xml" value="0.211" />
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/drawable/splash_screen.xml" value="0.1855" />
-        <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/layout/activity_menu.xml" value="0.33" />
+        <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/layout/activity_menu.xml" value="0.34814814814814815" />
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/layout/activity_registration.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/layout/activity_registration_in_personal_area.xml" value="0.2612540192926045" />
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/layout/activity_splash_acivity.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/layout/corner_constrain_layuot.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/nick1/Documents/GitHub/InterShipMKK/app/src/main/res/layout/edit_text_dialog.xml" value="0.33" />
         <entry key="..\:/projects/InterShipMKK/app/src/main/res/layout/activity_registration.xml" value="0.5" />
       </map>
