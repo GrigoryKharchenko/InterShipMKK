@@ -6,94 +6,73 @@
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
 
-    <ImageButton
-        android:id="@+id/imgBtOpenShift"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/white"
-        android:padding="0dp"
-        android:src="@drawable/ic_open_shift"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imgBtCheckList"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:backgroundTint="@color/white"
-        android:padding="0dp"
-        android:src="@drawable/ic_check_list"
-        app:layout_constraintStart_toStartOf="@id/imgBtOpenShift"
-        app:layout_constraintTop_toBottomOf="@+id/imgBtOpenShift" />
-
-    <ImageButton
-        android:id="@+id/imgBtListReports"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/white"
-        android:padding="0dp"
-        android:src="@drawable/ic_list_of_reports"
-        app:layout_constraintEnd_toEndOf="@+id/imgBtOpenShift"
-        app:layout_constraintStart_toEndOf="@+id/imgBtCheckList"
-        app:layout_constraintTop_toBottomOf="@+id/imgBtOpenShift" />
-
-    <ImageButton
-        android:id="@+id/imgBtReportX"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:padding="0dp"
-        android:src="@drawable/ic_x_report"
-        app:layout_constraintEnd_toEndOf="@+id/imgBtOpenShift"
-        app:layout_constraintStart_toStartOf="@+id/imgBtOpenShift"
-        app:layout_constraintTop_toBottomOf="@+id/imgBtCheckList"
-        android:visibility="gone"/>
-
-    <ImageButton
-        android:id="@+id/imgBtSettings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:padding="0dp"
-        android:src="@drawable/ic_settings"
-        app:layout_constraintEnd_toEndOf="@+id/imgBtReportX"
-        app:layout_constraintStart_toStartOf="@+id/imgBtReportX"
-        app:layout_constraintTop_toBottomOf="@+id/imgBtReportX" />
-
-    <Button
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.BackTint.14.Corner"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/btnCashBoxOff"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginHorizontal="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        android:padding="16sp"
-        android:layout_marginBottom="24dp"
-        android:text="Закрытие смены"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btnCashBoxOff"
-        android:layout_width="match_parent"
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/menu" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/openShiftLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/white"
-        android:text="Выключить кассу"
-        android:textAllCaps="false"
-        android:textColor="@color/red"
-        app:cornerRadius="8dp"
-        android:padding="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="@color/red"
-        app:strokeWidth="1dp" />
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/open_shift"
+        style="@style/TxWhite"
+        app:layout_constraintStart_toStartOf="@id/openShiftLayout"
+        app:layout_constraintTop_toTopOf="@id/openShiftLayout"
+        app:layout_constraintBottom_toBottomOf="cnOpenShift"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <Button-->
+<!--        style="@style/BackTint.14.Corner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="16sp"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        android:padding="16sp"-->
+<!--        android:text="Закрытие смены"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/btnCashBoxOff"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnCashBoxOff"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="16dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:padding="16sp"-->
+<!--        android:text="Выключить кассу"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/red"-->
+<!--        app:cornerRadius="8dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:strokeColor="@color/red"-->
+<!--        app:strokeWidth="1dp" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

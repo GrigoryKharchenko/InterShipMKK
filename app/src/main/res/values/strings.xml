@@ -19,16 +19,18 @@
     <string name="model_KKM">Модель ККМ</string>
     <string name="fiks_registrator">Фискальный регистратр №</string>
     <string name="reg_in_personal_area">Регистрация \nв Личном кабинете</string>
-    <string name="text_preview">Регистрация в личном кабинете неообходима для электронной отчетности операций по кассе в \nналогоовоой службе.</string>
+    <string name="text_preview">Регистрация в личном кабинете неообходима для электронной отчетности операций по кассе в налогоовоой службе.</string>
     <string name="e_mail">Введите e-mail</string>
     <string name="condition_password">Пароль должен содержать ццифры, прписные и \nстрочные буквы состять не менее из 8 символв.</string>
     <string name="password">Пароль</string>
     <string name="btn_registration">Зарегистрирооваться</string>
     <string name="congratulations">Поздравляем!</string>
     <string name="message_dialog">Вы зарегистрироовались в Личноом кабинете. На указанный e-mail отправлено письмо с инструментами.Можете начинать работать.</string>
-    <string name="next">Далее</string>
+    <string name="next">ДАЛЕЕ</string>
     <string name="device">Samsung S21</string>
     <string name="shift_cashier">Кассир смены</string>
     <string name="name_cashier">Имя, фамилия кассира</string>
-    <string name="cancel">Отмена</string>
+    <string name="cancel">ОТМЕНА</string>
+    <string name="menu">Меню</string>
+    <string name="open_shift">Открыть смену</string>
 </resources>

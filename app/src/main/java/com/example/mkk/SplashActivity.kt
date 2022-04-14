@@ -16,16 +16,12 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_acivity)
 
-        tvVersion = findViewById(R.id.txVersion)
-        tvCodeVersion = findViewById(R.id.txVerCode)
+        tvVersion = findViewById(R.id.tvVersion)
+        tvCodeVersion = findViewById(R.id.tvVerCode)
 
         setBuildVersion()
-
         setBuildCode()
 
-        Handler().postDelayed({
-            openMainActivity()
-        }, 2000)
     }
 
     private fun setBuildVersion() {
@@ -40,6 +36,9 @@ class SplashActivity : AppCompatActivity() {
     private fun openMainActivity() {
         val intent = Intent(this, RegistrationActivity::class.java)
         startActivity(intent)
+        Handler().postDelayed({
+            openMainActivity()
+        }, 2000)
         finish()
     }
 }
