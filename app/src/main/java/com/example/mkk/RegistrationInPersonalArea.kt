@@ -19,7 +19,6 @@ class RegistrationInPersonalArea : AppCompatActivity() {
         setupClickListeners()
     }
 
-
     private fun setupClickListeners() {
         buttonClear?.setOnClickListener { showCLearListConfirmationDialog() }
     }
@@ -33,5 +32,4 @@ class RegistrationInPersonalArea : AppCompatActivity() {
             }
             .show()
     }
-
 }
