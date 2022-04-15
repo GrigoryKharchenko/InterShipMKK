@@ -7,7 +7,7 @@
     tools:context=".RegistrationActivity">
 
     <ScrollView
-        android:id="@+id/ScrView"
+        android:id="@+id/scrView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
@@ -17,12 +17,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cntLay"
+            android:id="@+id/registration_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/txTitle"
+                android:id="@+id/tvTitle"
                 style="@style/TealDark.30"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -31,10 +31,10 @@
                 android:text="@string/registration"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/cntLay" />
+                app:layout_constraintTop_toTopOf="@id/registration_layout" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtNameSubject"
+                android:id="@+id/tilNameSubject"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
                 android:hint="@string/name_subject"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txTitle">
+                app:layout_constraintTop_toBottomOf="@id/tvTitle">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -53,7 +53,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtInn"
+                android:id="@+id/tilInn"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                 android:hint="@string/inn"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtNameSubject">
+                app:layout_constraintTop_toBottomOf="@id/tilNameSubject">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -71,7 +71,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtAddress"
+                android:id="@+id/tilAddress"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                 android:hint="@string/address"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtInn">
+                app:layout_constraintTop_toBottomOf="@id/tilInn">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -89,7 +89,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/dislocationTax"
+                android:id="@+id/tilDislocationTax"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                 android:hint="@string/dislocation_tax"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtAddress">
+                app:layout_constraintTop_toBottomOf="@id/tilAddress">
 
                 <AutoCompleteTextView
                     android:layout_width="match_parent"
@@ -107,7 +107,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/taxMode"
+                android:id="@+id/tilTaxMode"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
                 android:hint="@string/tax_mode"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/dislocationTax">
+                app:layout_constraintTop_toBottomOf="@id/tilDislocationTax">
 
                 <AutoCompleteTextView
                     android:layout_width="match_parent"
@@ -125,7 +125,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtKindActivity"
+                android:id="@+id/tilKindActivity"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
                 android:hint="@string/kind_of_activity"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/taxMode">
+                app:layout_constraintTop_toBottomOf="@id/tilTaxMode">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -143,7 +143,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/phoneNumber"
+                android:id="@+id/tilPhoneNumber"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -151,7 +151,7 @@
                 android:layout_marginTop="28dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtKindActivity">
+                app:layout_constraintTop_toBottomOf="@id/tilKindActivity">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -162,17 +162,17 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
-                android:id="@+id/txUse"
+                android:id="@+id/tvUse"
                 style="@style/TealBasic.12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="40dp"
                 android:text="@string/where_use"
-                app:layout_constraintTop_toBottomOf="@id/phoneNumber" />
+                app:layout_constraintTop_toBottomOf="@id/tilPhoneNumber" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/trade"
+                android:id="@+id/tilTrade"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -181,7 +181,7 @@
                 android:hint="@string/trade_pavilion"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txUse">
+                app:layout_constraintTop_toBottomOf="@id/tvUse">
 
                 <AutoCompleteTextView
                     android:layout_width="match_parent"
@@ -190,7 +190,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtNameObject"
+                android:id="@+id/tilNameObject"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -199,7 +199,7 @@
                 android:hint="@string/name_object"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/trade">
+                app:layout_constraintTop_toBottomOf="@id/tilTrade">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -208,7 +208,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtAddressObject"
+                android:id="@+id/tilAddressObject"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -217,7 +217,7 @@
                 android:hint="@string/address_object"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtNameObject">
+                app:layout_constraintTop_toBottomOf="@id/tilNameObject">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -226,17 +226,17 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
-                android:id="@+id/txInfoCash"
+                android:id="@+id/tvInfoCash"
                 style="@style/TealBasic.12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="20dp"
                 android:text="@string/information_cash"
-                app:layout_constraintTop_toBottomOf="@id/txtAddressObject" />
+                app:layout_constraintTop_toBottomOf="@id/tilAddressObject" />
 
             <TextView
-                android:id="@+id/txModelKKM"
+                android:id="@+id/tvModelKKM"
                 style="@style/Black.16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -245,10 +245,10 @@
                 android:layout_marginBottom="20dp"
                 android:text="@string/model_KKM"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txInfoCash" />
+                app:layout_constraintTop_toBottomOf="@id/tvInfoCash" />
 
             <TextView
-                android:id="@+id/txSamsung"
+                android:id="@+id/tvSamsung"
                 style="@style/Black.16"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -256,12 +256,12 @@
                 android:layout_marginEnd="12dp"
                 android:gravity="end"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/txModelKKM"
-                app:layout_constraintTop_toBottomOf="@id/txInfoCash"
+                app:layout_constraintStart_toEndOf="@id/tvModelKKM"
+                app:layout_constraintTop_toBottomOf="@id/tvInfoCash"
                 tools:text="Samsung S21" />
 
             <TextView
-                android:id="@+id/txFixReg"
+                android:id="@+id/tvFixReg"
                 style="@style/Black.16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -269,18 +269,18 @@
                 android:layout_marginTop="40dp"
                 android:text="@string/fiks_registrator"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txModelKKM" />
+                app:layout_constraintTop_toBottomOf="@id/tvModelKKM" />
 
             <TextView
-                android:id="@+id/x156"
+                android:id="@+id/tvNumberFixRegistration"
                 style="@style/Black.16"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:gravity="end"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/txFixReg"
-                app:layout_constraintTop_toBottomOf="@id/txSamsung"
+                app:layout_constraintStart_toEndOf="@id/tvFixReg"
+                app:layout_constraintTop_toBottomOf="@id/tvSamsung"
                 tools:text="X15629KG" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

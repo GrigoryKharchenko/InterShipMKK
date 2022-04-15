@@ -106,6 +106,8 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/corner_constrain_layout"
         android:backgroundTint="@color/purple"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btListCheck"
         app:layout_constraintTop_toBottomOf="@id/btOpenShift">
@@ -143,6 +145,8 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/corner_constrain_layout"
         android:backgroundTint="@color/blue_dark"
+        android:clickable="true"
+        android:focusable="true"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -225,20 +229,15 @@
 
     <Button
         android:id="@+id/btnCashBoxOff"
+        style="@style/RedButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/white"
         android:padding="16sp"
         android:text="@string/activity_menu_off_cash_box"
-        android:textAllCaps="false"
-        android:textColor="@color/red"
-        app:cornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="@color/red"
-        app:strokeWidth="1dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
