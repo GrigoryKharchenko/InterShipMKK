@@ -28,4 +28,17 @@
     <string name="message_dialog">Вы зарегистрироовались в Личноом кабинете. На указанный e-mail отправлено письмо с инструментами.Можете начинать работать.</string>
     <string name="next">Далее</string>
     <string name="device">Samsung S21</string>
+    <string name="shift_cashier">Кассир смены</string>
+    <string name="name_cashier">Имя, фамилия кассира</string>
+    <string name="cancel">Отмена</string>
+
+    <!--    Activity menu-->
+    <string name="activity_menu_open_shift">Открыть смену</string>
+    <string name="activity_menu_list_checks">Список чеков</string>
+    <string name="activity_menu_list_report">Список отчетов</string>
+    <string name="activity_menu_settings">Настройки</string>
+    <string name="activity_menu_x_report">Сформировать Х-отчет</string>
+    <string name="activity_menu_closed_shift">Закрытие смены</string>
+    <string name="activity_menu_off_cash_box">Выключить кассу</string>
+    <!--    Activity menu-->
 </resources>

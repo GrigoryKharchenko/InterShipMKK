@@ -7,7 +7,7 @@
     tools:context=".RegistrationActivity">
 
     <ScrollView
-        android:id="@+id/ScrView"
+        android:id="@+id/scrView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
@@ -16,26 +16,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:id="@+id/LinLay"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/registration_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/txTitle"
-                android:layout_width="wrap_content"
+                android:id="@+id/tvTitle"
+                style="@style/TealDark.30"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/registration"
-                android:textColor="@color/teal_Dark"
-                android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/LinLay" />
+                app:layout_constraintTop_toTopOf="@id/registration_layout" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtNameSubject"
+                android:id="@+id/tilNameSubject"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,18 +43,17 @@
                 android:hint="@string/name_subject"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txTitle">
+                app:layout_constraintTop_toBottomOf="@id/tvTitle">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textCapSentences"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtInn"
+                android:id="@+id/tilInn"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,17 +62,16 @@
                 android:hint="@string/inn"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtNameSubject">
+                app:layout_constraintTop_toBottomOf="@id/tilNameSubject">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtAddress"
+                android:id="@+id/tilAddress"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -83,17 +80,16 @@
                 android:hint="@string/address"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtInn">
+                app:layout_constraintTop_toBottomOf="@id/tilInn">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/dislocationTax"
+                android:id="@+id/tilDislocationTax"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -102,7 +98,7 @@
                 android:hint="@string/dislocation_tax"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtAddress">
+                app:layout_constraintTop_toBottomOf="@id/tilAddress">
 
                 <AutoCompleteTextView
                     android:layout_width="match_parent"
@@ -111,7 +107,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/taxMode"
+                android:id="@+id/tilTaxMode"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -120,17 +116,16 @@
                 android:hint="@string/tax_mode"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtAddress">
+                app:layout_constraintTop_toBottomOf="@id/tilDislocationTax">
 
                 <AutoCompleteTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtKindActivity"
+                android:id="@+id/tilKindActivity"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -139,17 +134,16 @@
                 android:hint="@string/kind_of_activity"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtNameSubject">
+                app:layout_constraintTop_toBottomOf="@id/tilTaxMode">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/phoneNumber"
+                android:id="@+id/tilPhoneNumber"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -157,7 +151,7 @@
                 android:layout_marginTop="28dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtNameSubject">
+                app:layout_constraintTop_toBottomOf="@id/tilKindActivity">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -165,20 +159,20 @@
                     android:hint="+996 XXX XXXXXX"
                     android:inputType="phone"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
+                android:id="@+id/tvUse"
+                style="@style/TealBasic.12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="40dp"
                 android:text="@string/where_use"
-                android:textColor="@color/teal_basic"
-                android:textSize="12sp" />
+                app:layout_constraintTop_toBottomOf="@id/tilPhoneNumber" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/trade"
+                android:id="@+id/tilTrade"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -187,16 +181,16 @@
                 android:hint="@string/trade_pavilion"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtAddress">
+                app:layout_constraintTop_toBottomOf="@id/tvUse">
 
                 <AutoCompleteTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="none" />
+                    android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtNameObject"
+                android:id="@+id/tilNameObject"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -205,17 +199,16 @@
                 android:hint="@string/name_object"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtNameSubject">
+                app:layout_constraintTop_toBottomOf="@id/tilTrade">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtAddressObject"
+                android:id="@+id/tilAddressObject"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -224,103 +217,87 @@
                 android:hint="@string/address_object"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtNameSubject">
+                app:layout_constraintTop_toBottomOf="@id/tilNameObject">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
+                android:id="@+id/tvInfoCash"
+                style="@style/TealBasic.12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="20dp"
                 android:text="@string/information_cash"
-                android:textColor="@color/teal_basic"
-                android:textSize="12sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_marginBottom="20dp"
-                    android:text="@string/model_KKM"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_weight="1"
-                    android:gravity="end"
-                    android:layout_marginEnd="12dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_marginBottom="20dp"
-                    tools:text="Samsung S21"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    />
-
-            </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+                app:layout_constraintTop_toBottomOf="@id/tilAddressObject" />
 
             <TextView
+                android:id="@+id/tvModelKKM"
+                style="@style/Black.16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginBottom="20dp"
-                android:text="@string/fiks_registrator"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                />
+                android:text="@string/model_KKM"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvInfoCash" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/tvSamsung"
+                style="@style/Black.16"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginBottom="20dp"
-                tools:text="X15629KG"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:layout_weight="1"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="12dp"
                 android:gravity="end"
-                android:layout_marginEnd="12dp"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvModelKKM"
+                app:layout_constraintTop_toBottomOf="@id/tvInfoCash"
+                tools:text="Samsung S21" />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/tvFixReg"
+                style="@style/Black.16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/fiks_registrator"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvModelKKM" />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/tvNumberFixRegistration"
+                style="@style/Black.16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvFixReg"
+                app:layout_constraintTop_toBottomOf="@id/tvSamsung"
+                tools:text="X15629KG" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
 
     <Button
         android:id="@+id/btnSendApplication"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.BackTint.14.Corner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/teal_basic"
+        android:padding="16dp"
         android:text="@string/send_application"
-        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

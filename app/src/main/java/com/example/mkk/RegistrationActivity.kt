@@ -15,12 +15,9 @@ class RegistrationActivity : AppCompatActivity() {
 
         btnSendApplication = findViewById(R.id.btnSendApplication)
 
-
         btnSendApplication?.setOnClickListener(){
             val intent = Intent(this, RegistrationInPersonalArea::class.java)
             startActivity(intent)
         }
-
     }
-
 }

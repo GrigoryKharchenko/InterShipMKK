@@ -17,9 +17,64 @@
     <style name="Theme.MKK.Launcher">
         <item name="android:windowBackground">@drawable/splash_screen</item>
     </style>
+    
+    <style name="TealDark">
+        <item name="android:textColor">@color/teal_dark</item>
+    </style>
+
+    <style name="TealDark.30">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="TealBasic">
+        <item name="android:textColor">@color/teal_basic</item>
+    </style>
+
+    <style name="TealBasic.12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.BackTint">
+        <item name="android:backgroundTint">@color/teal_basic</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.BackTint.14">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.BackTint.14.Corner">
+        <item name="cornerRadius">8sp</item>
+    </style>
+
+    <style name="Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Black.16">
+        <item name="android:textSize">16sp</item>
+    </style>
 
     <style name="Button.Blue" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@color/teal_basic</item>
     </style>
-    
+
+    <style name="TextWhite">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="RedButton">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="strokeColor">@color/red</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="EditTextDialog">
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/teal_basic</item>
+    </style>
+
 </resources>
+
+

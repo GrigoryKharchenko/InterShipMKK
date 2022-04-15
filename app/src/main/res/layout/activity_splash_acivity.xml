@@ -4,23 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity"
-    android:background="@drawable/gradient_color">
-
+    android:background="@drawable/gradient_color"
+    tools:context=".SplashActivity">
 
     <TextView
-        android:id="@+id/txTitle"
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/title"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/imgLogo"
+        app:layout_constraintBottom_toTopOf="@id/imgLogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgLogo"
@@ -33,27 +31,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/verCode"
+        android:id="@+id/txVerCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        app:layout_constraintBottom_toTopOf="@+id/txVersion"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/txVersion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="aa"
-        android:textColor="@color/white"/>
+        tools:text="text" />
 
     <TextView
         android:id="@+id/txVersion"
         android:layout_width="50dp"
         android:layout_height="12dp"
+        android:layout_marginBottom="12dp"
         android:textColor="@color/white"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="12dp"
         tools:text="text" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
