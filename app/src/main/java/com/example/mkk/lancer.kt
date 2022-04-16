@@ -5,29 +5,28 @@ class Lancer {
     private var engine: Double = 0.0
     private var color: String = ""
     private var wheels: Int = 0
-    private var infoCar:String=""
 
-    fun carInfoEng(): Double{
+    fun carInfoEng(): Double {
         return engine
     }
 
-    fun carInfoColor():String{
+    fun carInfoColor(): String {
         return color
     }
 
-    fun carInfoWheels():Int{
+    fun carInfoWheels(): Int {
         return wheels
     }
 
-    fun setColor(value:String){
+    fun setColor(value: String) {
         color = value
     }
 
-    fun setWheel(value:Int){
+    fun setWheel(value: Int) {
         wheels = value
     }
 
-    fun setEngine(value:Double){
+    fun setEngine(value: Double) {
         engine = value
     }
 }

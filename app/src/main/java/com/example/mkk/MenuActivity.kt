@@ -1,24 +1,34 @@
 package com.example.mkk
 
 import android.os.Bundle
-import android.widget.ImageButton
+import android.view.LayoutInflater
+import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.example.mkk.databinding.ActivityMenuBinding
 
 class MenuActivity : AppCompatActivity() {
 
-
-    private var btListReport: ConstraintLayout? = null
-
+    private lateinit var binding: ActivityMenuBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
+        binding = ActivityMenuBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        btListReport = findViewById(R.id.btListReport)
+       binding.btOpenShift.setOnClickListener {
 
-        btListReport?.setOnClickListener{}
+            val dialogOpenShift = LayoutInflater.from(this).inflate(R.layout.edit_text_dialog, null)
+
+            val builderOpenShift = AlertDialog.Builder(this)
+                .setView(dialogOpenShift)
+                .show()
+
+        }
 
     }
+
+
 
 }
 

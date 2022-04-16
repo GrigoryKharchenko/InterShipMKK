@@ -4,18 +4,19 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mkk.databinding.ActivityRegistrationBinding
+
 
 class RegistrationActivity : AppCompatActivity() {
 
-    private var btnSendApplication: Button? = null
+    private lateinit var binding: ActivityRegistrationBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registration)
+        binding = ActivityRegistrationBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        btnSendApplication = findViewById(R.id.btnSendApplication)
-
-        btnSendApplication?.setOnClickListener(){
+        binding.btnSendApplication.setOnClickListener(){
             val intent = Intent(this, RegistrationInPersonalArea::class.java)
             startActivity(intent)
         }
