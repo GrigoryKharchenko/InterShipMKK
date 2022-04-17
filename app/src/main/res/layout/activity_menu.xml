@@ -215,6 +215,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
+        android:id="@+id/btnClosedShift"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.BackTint.14.Corner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

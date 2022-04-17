@@ -16,9 +16,30 @@ class RegistrationActivity : AppCompatActivity() {
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnSendApplication.setOnClickListener(){
+        binding.btnSendApplication.setOnClickListener() {
             val intent = Intent(this, RegistrationInPersonalArea::class.java)
             startActivity(intent)
         }
+        phoneFocus()
+    }
+
+    private fun phoneFocus() {
+        binding.tiePhoneNumber.setOnFocusChangeListener { _, focused ->
+            if (!focused) {
+                binding.tilPhoneNumber.helperText = phoneText()
+            }
+        }
+    }
+
+    private fun phoneText(): String? {
+        val phoneText = binding.tiePhoneNumber.text.toString()
+        if (!phoneText.matches(".*[0-9].*".toRegex())) {
+            return "Введите корректный номер"
+        }
+        if (phoneText.length != 12) {
+            return "Введите корректный номер"
+        }
+        return null
     }
 }
+

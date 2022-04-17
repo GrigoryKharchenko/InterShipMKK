@@ -68,5 +68,7 @@
     <string name="check_fp">ФП</string>
     <string name="number_receipt">Номер отчета</string>
     <string name="date">Дата</string>
+    <string name="number_phone">Контактный номер телефона субъкта</string>
+    <string name="helper_enter_phone_number">Введите коректный номер</string>
     <!--    check-->
 </resources>
