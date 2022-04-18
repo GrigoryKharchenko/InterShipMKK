@@ -19,7 +19,7 @@
     <string name="model_KKM">Модель ККМ</string>
     <string name="fiks_registrator">Фискальный регистратр №</string>
     <string name="reg_in_personal_area">Регистрация \nв Личном кабинете</string>
-    <string name="text_preview">Регистрация в личном кабинете неообходима для электронной отчетности операций по кассе в \nналогоовоой службе.</string>
+    <string name="text_preview">Регистрация в личном кабинете неообходима для электронной отчетности операций по кассе в налогоовоой службе.</string>
     <string name="e_mail">Введите e-mail</string>
     <string name="condition_password">Пароль должен содержать ццифры, прписные и \nстрочные буквы состять не менее из 8 символв.</string>
     <string name="password">Пароль</string>
@@ -28,4 +28,52 @@
     <string name="message_dialog">Вы зарегистрироовались в Личноом кабинете. На указанный e-mail отправлено письмо с инструментами.Можете начинать работать.</string>
     <string name="next">Далее</string>
     <string name="device">Samsung S21</string>
+    <string name="shift_cashier">Кассир смены</string>
+    <string name="name_cashier">Имя, фамилия кассира</string>
+    <string name="cancel">Отмена</string>
+
+    <!--    Activity menu-->
+    <string name="activity_menu_open_shift">Открыть смену</string>
+    <string name="activity_menu_list_checks">Список чеков</string>
+    <string name="activity_menu_list_report">Список отчетов</string>
+    <string name="activity_menu_settings">Настройки</string>
+    <string name="activity_menu_x_report">Сформировать Х-отчет</string>
+    <string name="activity_menu_closed_shift">Закрытие смены</string>
+    <string name="activity_menu_off_cash_box">Выключить кассу</string>
+    <!--    Activity menu-->
+
+    <!--    check-->
+    <string name="check_name">Имя</string>
+    <string name="check_inn">ИНН:</string>
+    <string name="check_number_cash_box">Номер кассы:</string>
+    <string name="check_rnm">РНМ:</string>
+    <string name="check_cashier">Кассир</string>
+    <string name="check_number_change">Номер смены:</string>
+    <string name="check_z_report">Z-отчет</string>
+    <string name="check_total_number_checks">ОБЩЕЕ КОЛИЧЕСТВО ЧЕКОВ</string>
+    <string name="check_number_sales_check">Количество чеков проодаж:</string>
+    <string name="check_number_sales_return_check">Количество чекоов возврата проодаж:</string>
+    <string name="check_total_generated_checks">Всего сформированно чеков:</string>
+    <string name="check_awaiting_transmission">Из них ожидает передачи в СФД:</string>
+    <string name="check_sum_realized_return">СУММА РЕАЛИЗООВАННОГО/ВОЗВРАТНОГО \nТОВАРА ЗА СМЕНУ</string>
+    <string name="check_sales_amount">Сумма продаж:</string>
+    <string name="check_amount_return_sales">Сумма возвратов продаж:</string>
+    <string name="check_general_amount">Общая сумма:</string>
+    <string name="check_cut_sum">СУММА В РАЗРЕЗЕ ВИДОВ ПЛАТЕЖЕЙ</string>
+    <string name="check_cash">Наличный расчет:</string>
+    <string name="check_no_cash">Безналичный расчет:</string>
+    <string name="check_non_resettable">НЕОБНУЛЯЕМАЯ СУММА</string>
+    <string name="check_amount_reports">КОЛИЧЕСВТО ОТЧЕТОВ ЗА СМЕНУ</string>
+    <string name="check_total_formed_report">Всего сформировано X-отчетов:</string>
+    <string name="check_fp">ФП</string>
+    <string name="number_receipt">Номер отчета</string>
+    <string name="date">Дата</string>
+    <!--    check-->
+
+    <string name="number_phone">Контактный номер телефона субъкта</string>
+    <string name="helper_enter_phone_number">Введите коректный номер</string>
+    <string name="new_shift_open">Новая смена открыта</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

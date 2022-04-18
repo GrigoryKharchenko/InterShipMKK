@@ -3,43 +3,43 @@ package com.example.mkk
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.widget.TextView
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mkk.databinding.ActivitySplashAcivityBinding
 
 class SplashActivity : AppCompatActivity() {
 
-    private var tvVersion: TextView? = null
-    private var codeVersion: TextView? = null
+    private lateinit var binding: ActivitySplashAcivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.Theme_MKK)
+        binding = ActivitySplashAcivityBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash_acivity)
-
-        tvVersion = findViewById(R.id.txVersion)
-        codeVersion = findViewById(R.id.verCode)
-
+        setContentView(binding.root)
+        
 
         setBuildVersion()
         setBuildCode()
-
-        Handler().postDelayed({
-            openMainActivity()
-        }, 2000)
+        openMainActivity()
     }
 
     private fun setBuildVersion() {
-        tvVersion?.text = getString(R.string.version, BuildConfig.VERSION_NAME)
+        binding.txVersion.text = getString(R.string.version, BuildConfig.VERSION_NAME)
     }
 
     private fun setBuildCode() {
-
-        codeVersion?.text = getString(R.string.versionName, BuildConfig.VERSION_CODE)
+        binding.tvVerCode.text = getString(R.string.versionName, BuildConfig.VERSION_CODE)
     }
 
     private fun openMainActivity() {
         val intent = Intent(this, RegistrationActivity::class.java)
-        startActivity(intent)
+        Handler(Looper.getMainLooper()).postDelayed({
+            startActivity(intent)
+            finish()
+        }, SPLASH_TIME)
     }
 
+    companion object {
+        const val SPLASH_TIME: Long = 2000
+    }
 }

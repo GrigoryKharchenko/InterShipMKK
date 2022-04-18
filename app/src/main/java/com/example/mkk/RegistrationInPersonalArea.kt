@@ -1,27 +1,25 @@
 package com.example.mkk
 
 import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mkk.databinding.ActivityRegistrationInPersonalAreaBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class RegistrationInPersonalArea : AppCompatActivity() {
 
-    private var buttonClear: Button? = null
+    private lateinit var binding: ActivityRegistrationInPersonalAreaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registration_in_personal_area)
-
-        buttonClear = findViewById(R.id.btnRegistration)
-
+        binding = ActivityRegistrationInPersonalAreaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         setupClickListeners()
     }
 
-
     private fun setupClickListeners() {
-        buttonClear?.setOnClickListener { showCLearListConfirmationDialog() }
+        binding.btnRegistration.setOnClickListener { showCLearListConfirmationDialog() }
     }
 
     private fun showCLearListConfirmationDialog() {
@@ -29,9 +27,14 @@ class RegistrationInPersonalArea : AppCompatActivity() {
             .setTitle(getString(R.string.congratulations))
             .setMessage(resources.getString(R.string.message_dialog))
             .setPositiveButton(R.string.next) { dialog: DialogInterface, _: Int ->
+                startMenu()
                 dialog.dismiss()
             }
             .show()
     }
 
+    private fun startMenu() {
+        val intent = Intent(this, MenuActivity::class.java)
+        startActivity(intent)
+    }
 }

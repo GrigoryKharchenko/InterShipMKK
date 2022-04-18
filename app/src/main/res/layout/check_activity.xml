@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/registration_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/check_name" />
+
+        <TextView
+            android:id="@+id/tvInn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_inn"
+            app:layout_constraintEnd_toStartOf="@id/tvValueInn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvValueInn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvInn"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            tools:text="541541256414164161464161461461461468585525252825522525146146146" />
+
+        <TextView
+            android:id="@+id/tvNumberCashBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/check_number_cash_box"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvInn" />
+
+        <TextView
+            android:id="@+id/tvValueNumberCashBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvNumberCashBox"
+            app:layout_constraintTop_toBottomOf="@id/tvValueInn"
+            tools:text="5454545343545454545454546545645454545555565" />
+
+        <TextView
+            android:id="@+id/tvRnm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_rnm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNumberCashBox" />
+
+        <TextView
+            android:id="@+id/tvValueRnm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvRnm"
+            app:layout_constraintTop_toBottomOf="@id/tvValueNumberCashBox"
+            tools:text="45345454555555555555555555555555555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvNumberChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_number_change"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRnm" />
+
+        <TextView
+            android:id="@+id/tvValueNumberChange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvNumberChange"
+            app:layout_constraintTop_toBottomOf="@id/tvValueRnm"
+            tools:text="5555555555555555555555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvCashier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_cashier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNumberChange" />
+
+        <TextView
+            android:id="@+id/tvValueCashier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvCashier"
+            app:layout_constraintTop_toBottomOf="@id/tvValueNumberChange"
+            tools:text="66666666666666666666666666666666666655555555" />
+
+        <TextView
+
+            android:id="@+id/tvZReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/check_z_report"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvValueCashier" />
+
+        <TextView
+            android:id="@+id/tvTotalNumberChecks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/check_total_number_checks"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvZReport" />
+
+        <TextView
+            android:id="@+id/tvNumberSalesCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_number_sales_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTotalNumberChecks" />
+
+        <TextView
+            android:id="@+id/tvValueNumberSalesCheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvNumberSalesCheck"
+            app:layout_constraintTop_toBottomOf="@id/tvTotalNumberChecks"
+            tools:text="6666666666666666666666666666666666666" />
+
+        <TextView
+            android:id="@+id/tvNumberSalesReturnCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_number_sales_return_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNumberSalesCheck" />
+
+        <TextView
+            android:id="@+id/tvValueNumberSalesReturnCheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvNumberSalesReturnCheck"
+            app:layout_constraintTop_toBottomOf="@id/tvValueNumberSalesCheck"
+            tools:text="55555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvTotalGeneratedChecks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_total_generated_checks"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNumberSalesReturnCheck" />
+
+        <TextView
+            android:id="@+id/tvValueTotalGeneratedChecks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvTotalGeneratedChecks"
+            app:layout_constraintTop_toBottomOf="@id/tvValueNumberSalesReturnCheck"
+            tools:text="545454545454545455454445454455445" />
+
+        <TextView
+            android:id="@+id/tvCheckAwaitingTransmission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_awaiting_transmission"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTotalGeneratedChecks" />
+
+        <TextView
+            android:id="@+id/tvValueCheckAwaitingTransmission"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvCheckAwaitingTransmission"
+            app:layout_constraintTop_toBottomOf="@id/tvValueTotalGeneratedChecks"
+            tools:text="55555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tVSumRealizedReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/check_sum_realized_return"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCheckAwaitingTransmission" />
+
+        <TextView
+            android:id="@+id/tvSalesAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_sales_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tVSumRealizedReturn" />
+
+        <TextView
+            android:id="@+id/tvValueSalesAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvSalesAmount"
+            app:layout_constraintTop_toBottomOf="@id/tVSumRealizedReturn"
+            tools:text="555555555555555555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvAmountReturnSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_amount_return_sales"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSalesAmount" />
+
+        <TextView
+            android:id="@+id/tvValueAmountReturnSales"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvAmountReturnSales"
+            app:layout_constraintTop_toBottomOf="@id/tvValueSalesAmount"
+            tools:text="55555555555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvGeneralAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_general_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAmountReturnSales" />
+
+        <TextView
+            android:id="@+id/tvValueGeneralAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvGeneralAmount"
+            app:layout_constraintTop_toBottomOf="@id/tvValueAmountReturnSales"
+            tools:text="55555555555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvCutSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/check_cut_sum"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvGeneralAmount" />
+
+        <TextView
+            android:id="@+id/tvCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_cash"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCutSum" />
+
+        <TextView
+            android:id="@+id/tvValueCash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvCash"
+            app:layout_constraintTop_toBottomOf="@id/tvCutSum"
+            tools:text="555555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvNoCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_no_cash"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCash" />
+
+        <TextView
+            android:id="@+id/tvValueNoCash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvNoCash"
+            app:layout_constraintTop_toBottomOf="@id/tvValueCash"
+            tools:text="5555555555555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvNonResettable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/check_non_resettable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNoCash" />
+
+        <TextView
+            android:id="@+id/tvNonSalesAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_sales_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNonResettable" />
+
+        <TextView
+            android:id="@+id/tvNonValueSalesAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvSalesAmount"
+            app:layout_constraintTop_toBottomOf="@id/tvNonResettable"
+            tools:text="555555555555555555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvNonAmountReturnSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_amount_return_sales"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNonSalesAmount" />
+
+        <TextView
+            android:id="@+id/tvNonValueAmountReturnSales"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvAmountReturnSales"
+            app:layout_constraintTop_toBottomOf="@id/tvNonValueSalesAmount"
+            tools:text="55555555555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvNonGeneralAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_general_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNonAmountReturnSales" />
+
+        <TextView
+            android:id="@+id/tvNonValueGeneralAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvGeneralAmount"
+            app:layout_constraintTop_toBottomOf="@id/tvNonValueAmountReturnSales"
+            tools:text="55555555555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvAmountReports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/check_amount_reports"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNonGeneralAmount" />
+
+        <TextView
+            android:id="@+id/tvTotalFormedReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_total_formed_report"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAmountReports" />
+
+        <TextView
+            android:id="@+id/tvValueTotalFormedReport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvTotalFormedReport"
+            app:layout_constraintTop_toBottomOf="@id/tvAmountReports"
+            tools:text="5555555555555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvCheckAwaitingTransmissionShift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/check_awaiting_transmission"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalFormedReport" />
+
+        <TextView
+            android:id="@+id/tvValueCheckAwaitingTransmissionShift"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvCheckAwaitingTransmissionShift"
+            app:layout_constraintTop_toBottomOf="@+id/tvValueTotalFormedReport"
+            tools:text="55555555555555555555555555555555" />
+
+        <TextView
+            android:id="@+id/tvFp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/check_fp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCheckAwaitingTransmissionShift" />
+
+        <TextView
+            android:id="@+id/tvNumberReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/number_receipt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFp" />
+
+        <TextView
+            android:id="@+id/tvNumberReportValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvNumberReport"
+            app:layout_constraintTop_toBottomOf="@id/tvFp"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNumberReport" />
+
+        <TextView
+            android:id="@+id/tvDateValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvDate"
+            app:layout_constraintTop_toBottomOf="@id/tvNumberReport"
+            tools:text="16.3.3.3.3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
