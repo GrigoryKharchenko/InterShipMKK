@@ -73,5 +73,7 @@
     <string name="number_phone">Контактный номер телефона субъкта</string>
     <string name="helper_enter_phone_number">Введите коректный номер</string>
     <string name="new_shift_open">Новая смена открыта</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

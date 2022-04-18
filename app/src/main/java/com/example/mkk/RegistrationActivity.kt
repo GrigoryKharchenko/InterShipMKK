@@ -21,24 +21,16 @@ class RegistrationActivity : AppCompatActivity() {
             val intent = Intent(this, RegistrationInPersonalArea::class.java)
             startActivity(intent)
         }
-        phoneNumberFocus()
+        setFocusPhoneNumber()
     }
 
-    private fun phoneNumberFocus() {
+    private fun setFocusPhoneNumber() {
         binding.tiePhoneNumber.setOnFocusChangeListener { _, focused ->
             if (!focused) {
-                binding.tilPhoneNumber.helperText = inputDataPhoneNumber()
+                val number = PhoneNumberValidator()
+                val res = number.validate("")
+                binding.tilPhoneNumber.helperText = res?.let { getString(it) }
             }
         }
-    }
-
-    private fun inputDataPhoneNumber(): String? {
-        val phoneText = binding.tiePhoneNumber.text.toString()
-        when {
-            phoneText.matches(ALLOWED_CHARACTERS.toRegex()) -> getString(R.string.helper_enter_phone_number)
-
-            phoneText.length != PHONE_LENGTH -> getString(R.string.helper_enter_phone_number)
-        }
-        return null
     }
 }

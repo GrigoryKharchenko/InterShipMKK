@@ -27,13 +27,13 @@ class RegistrationInPersonalArea : AppCompatActivity() {
             .setTitle(getString(R.string.congratulations))
             .setMessage(resources.getString(R.string.message_dialog))
             .setPositiveButton(R.string.next) { dialog: DialogInterface, _: Int ->
-                dialogClickListener()
+                startMenu()
                 dialog.dismiss()
             }
             .show()
     }
 
-    private fun dialogClickListener() {
+    private fun startMenu() {
         val intent = Intent(this, MenuActivity::class.java)
         startActivity(intent)
     }

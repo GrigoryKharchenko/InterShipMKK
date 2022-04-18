@@ -17,17 +17,17 @@ class MenuActivity : AppCompatActivity() {
         binding = ActivityMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        dialogNameCashier()
+        dialogViewNameCashier()
         setButtonInvisible()
     }
 
-    private fun dialogNameCashier() {
+    private fun dialogViewNameCashier() {
         binding.btOpenShift.setOnClickListener {
 
-            val dialogOpenShift = layoutInflater.inflate(R.layout.edit_text_dialog, null)
+            val dialogViewOpenShift = layoutInflater.inflate(R.layout.edit_text_dialog, null)
 
             val builderOpenShift = MaterialAlertDialogBuilder(this)
-                .setView(dialogOpenShift)
+                .setView(dialogViewOpenShift)
                 .show()
 
             builderOpenShift.findViewById<TextView>(R.id.tvNext)?.setOnClickListener {
@@ -48,7 +48,7 @@ class MenuActivity : AppCompatActivity() {
     }
 
     private fun toastOpenShift() {
-        Toast.makeText(applicationContext, getString(R.string.new_shift_open), Toast.LENGTH_SHORT)
+        Toast.makeText(applicationContext,(R.string.new_shift_open), Toast.LENGTH_SHORT)
             .show()
     }
 

@@ -16,6 +16,7 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivitySplashAcivityBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        
 
         setBuildVersion()
         setBuildCode()
