@@ -3,12 +3,13 @@ package com.example.mkk
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mkk.databinding.ActivitySplashAcivityBinding
 
 class SplashActivity : AppCompatActivity() {
 
-  private lateinit var binding: ActivitySplashAcivityBinding
+    private lateinit var binding: ActivitySplashAcivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.Theme_MKK)
@@ -31,9 +32,13 @@ class SplashActivity : AppCompatActivity() {
 
     private fun openMainActivity() {
         val intent = Intent(this, RegistrationActivity::class.java)
-        Handler().postDelayed({
+        Handler(Looper.getMainLooper()).postDelayed({
             startActivity(intent)
             finish()
-        }, 2000)
+        }, SPLASH_TIME)
+    }
+
+    companion object {
+        const val SPLASH_TIME: Long = 2000
     }
 }

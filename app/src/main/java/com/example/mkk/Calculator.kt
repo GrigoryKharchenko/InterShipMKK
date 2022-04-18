@@ -1,28 +1,29 @@
 package com.example.mkk
 
+// task for example
 class Calculator {
 
     private var a: Double = 0.0
     private var b: Double = 0.0
 
-    fun getA():Double{
+    fun getA(): Double {
         return a
     }
 
-    fun getB():Double{
+    fun getB(): Double {
         return b
     }
 
-    fun setAB(valueA:Double,valueB:Double){
+    fun setAB(valueA: Double, valueB: Double) {
         a = valueA
         b = valueB
     }
 
-    fun getPlus():Double{
+    fun getPlus(): Double {
         return a + b
     }
 
-    fun getDiv():Double {
+    fun getDiv(): Double {
         if (a == 0.0 || b == 0.0) {
             return 0.0
         } else {
@@ -31,7 +32,7 @@ class Calculator {
 
     }
 
-    fun getMulti():Double{
+    fun getMulti(): Double {
         if (a == 0.0 || b == 0.0) {
             return 0.0
         } else {

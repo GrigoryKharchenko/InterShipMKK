@@ -19,7 +19,7 @@
     <string name="model_KKM">Модель ККМ</string>
     <string name="fiks_registrator">Фискальный регистратр №</string>
     <string name="reg_in_personal_area">Регистрация \nв Личном кабинете</string>
-    <string name="text_preview">Регистрация в личном кабинете неообходима для электронной отчетности операций по кассе в \nналогоовоой службе.</string>
+    <string name="text_preview">Регистрация в личном кабинете неообходима для электронной отчетности операций по кассе в налогоовоой службе.</string>
     <string name="e_mail">Введите e-mail</string>
     <string name="condition_password">Пароль должен содержать ццифры, прписные и \nстрочные буквы состять не менее из 8 символв.</string>
     <string name="password">Пароль</string>
@@ -68,7 +68,10 @@
     <string name="check_fp">ФП</string>
     <string name="number_receipt">Номер отчета</string>
     <string name="date">Дата</string>
+    <!--    check-->
+
     <string name="number_phone">Контактный номер телефона субъкта</string>
     <string name="helper_enter_phone_number">Введите коректный номер</string>
-    <!--    check-->
+    <string name="new_shift_open">Новая смена открыта</string>
+
 </resources>

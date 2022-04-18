@@ -3,7 +3,6 @@ package com.example.mkk
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mkk.databinding.ActivityRegistrationInPersonalAreaBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -16,8 +15,6 @@ class RegistrationInPersonalArea : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistrationInPersonalAreaBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
         setupClickListeners()
     }
 
@@ -36,7 +33,7 @@ class RegistrationInPersonalArea : AppCompatActivity() {
             .show()
     }
 
-    private fun dialogClickListener(){
+    private fun dialogClickListener() {
         val intent = Intent(this, MenuActivity::class.java)
         startActivity(intent)
     }
